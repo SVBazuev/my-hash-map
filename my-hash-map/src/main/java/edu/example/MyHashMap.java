@@ -115,9 +115,9 @@ public class MyHashMap <K, V> implements Map<K,V> {
         return null;
     }
 
-    private void addNode(int bucketIdx, int hash, K key, V value) {
+    private void addNode(int bucketIdx, int hash, K key, V val) {
         Node<K, V> node = table[bucketIdx];
-        table[bucketIdx] = new Node<>(hash, key, value, node);
+        table[bucketIdx] = new Node<>(hash, key, val, node);
         size++;
         if (size >= threshold) {
             resize();
