@@ -1,0 +1,5 @@
+.vscode/
+target/
+canonical/
+*.py
+*[doc]*.md
